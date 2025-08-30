@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Black Veil Diary</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-      body {
-    background-image: url('07bb0d7200727b486e7b143c79bda02e.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary Entry - Black Veil Diary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #f5f5f5;
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+        }
 
-      color: #e4d7c5;
-      font-family: "Courier New", monospace;
-      max-width: 700px;
-      margin: 4rem auto;
-      line-height: 1.6;
-      text-align: center;
-    }
-    h1 {
-      font-family: "Cinzel Decorative", serif;
-      font-size: 3rem;
-      color: #b82e47;
-      margin-bottom: 1rem;
-    }
-    h2 {
-      font-family: "Cinzel Decorative", serif;
-      font-size: 1.5rem;
-      color: #e4d7c5;
-      margin-bottom: 2rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 1rem 0;
-    }
-    a {
-      text-decoration: none;
-      color: #e4d7c5;
-      font-size: 1.2rem;
-      transition: color 0.3s;
-    }
-    a:hover {
-      color: #b82e47;
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        h1.entry-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #ff66cc;
+        }
+
+        p.entry-date {
+            text-align: center;
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .entry-content {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #ff66cc;
+            font-weight: bold;
+        }
+
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <h1>🖤 Black Veil Diary 🖤</h1>
-  <h2>A collection of confessions beneath the veil...</h2>
-
-  <div class="entry-list">
-    <ul>
-      <li><a href="entries/entry1.html">Entry I — August 30, 2025</a></li>
-      <li><a href="entries/entry2.html">Entry II — August 31, 2025</a></li>
-      <!-- Add more entries here -->
-    </ul>
-  </div>
-
-  <footer>
-    <p>Turn the page... if you dare.</p>
-  </footer>
+    <div class="container">
+        <h1 class="entry-title">Entry Title Here</h1>
+        <p class="entry-date">August 30, 2025</p>
+        <div class="entry-content">
+            <p>This is where the diary entry text goes. You can write as much as you want here. Add multiple paragraphs, thoughts, reflections, or even personal notes. This section is fully scrollable and styled for readability against the dark background.</p>
+            <p>Remember to keep your thoughts flowing and let the diary be your private sanctuary.</p>
+        </div>
+        <a href="index.html" class="back-link">&larr; Back to Entries</a>
+    </div>
 </body>
 </html>
-
