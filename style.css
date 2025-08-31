@@ -2,7 +2,7 @@
    Black Veil Diary - Index CSS
    =========================== */
 
-/* Reset default browser padding/margin */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +11,41 @@
 
 /* General page styling */
 body {
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #2a0d2a);
+  /* Layered background: gradient + side glow + texture */
+  background: radial-gradient(circle at left, #2a0d2a55, transparent 70%),
+              radial-gradient(circle at right, #2a0d2a55, transparent 70%),
+              linear-gradient(135deg, #0f0f0f, #1a1a1a, #2a0d2a);
+  background-image: radial-gradient(#222 1px, transparent 1px),
+                    radial-gradient(circle at left, #2a0d2a55, transparent 70%),
+                    radial-gradient(circle at right, #2a0d2a55, transparent 70%),
+                    linear-gradient(135deg, #0f0f0f, #1a1a1a, #2a0d2a);
+  background-size: 40px 40px, auto, auto, cover;
   color: #e4d7c5;
   font-family: "Courier New", monospace;
   line-height: 1.6;
   padding: 2rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Floating decorative symbols */
+body::before,
+body::after {
+  content: "✦ ✧ ✦";
+  position: fixed;
+  font-size: 3rem;
+  color: #ff66cc33;
+  pointer-events: none; /* ignore clicks */
+}
+body::before {
+  top: 20%;
+  left: 10px;
+  transform: rotate(-15deg);
+}
+body::after {
+  bottom: 15%;
+  right: 10px;
+  transform: rotate(15deg);
 }
 
 /* Container that centers everything */
@@ -62,3 +92,4 @@ ul.entry-list li a:hover {
   color: #0f0f0f;
   box-shadow: 0 0 20px #ff66cc, 0 0 40px #660033;
 }
+
