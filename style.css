@@ -1,0 +1,64 @@
+/* ===========================
+   Black Veil Diary - Index CSS
+   =========================== */
+
+/* Reset default browser padding/margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #2a0d2a);
+  color: #e4d7c5;
+  font-family: "Courier New", monospace;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Container that centers everything */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Main title */
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5rem;
+  color: #ff66cc;
+  text-shadow: 0 0 10px #ff33aa, 0 0 20px #ff66cc;
+  margin-bottom: 2rem;
+}
+
+/* List of entries */
+ul.entry-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.entry-list li {
+  margin: 1rem 0;
+}
+
+ul.entry-list li a {
+  display: block;
+  padding: 1rem;
+  background: rgba(26, 26, 26, 0.85);
+  border: 2px solid #ff66cc;
+  border-radius: 12px;
+  color: #e4d7c5;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 0 10px #ff66cc33;
+  transition: all 0.3s ease;
+}
+
+ul.entry-list li a:hover {
+  background: #ff66cc;
+  color: #0f0f0f;
+  box-shadow: 0 0 20px #ff66cc, 0 0 40px #660033;
+}
